@@ -4,4 +4,56 @@
 /* Main Css (Hexa Color) */
 body{
    background-color: #1F1F1F;
+   font-family: 'Poppins';
+   color: #FBF5EF; /* Main color text (light) */
 }
+
+/* Navbar Css */
+nav{
+   display: flex;
+   justify-content: space-between;
+   margin-right: 50px;
+   margin-left: 50px;
+}
+
+nav ul{
+   display: flex;
+   align-items: center;
+   list-style: none;
+}
+
+nav ul a{
+   text-decoration: none;
+   color: #FBF5EF;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+nav ul .active{   /* Custom Css for the active page */
+   border: solid #DFDBAE 3px;
+   border-radius: 5px;
+   padding: 2px 6px 2px 6px;
+} 
+
+nav ul li{
+   margin-right: 30px;
+}
+
+nav ul > li{
+   position: relative;
+}
+
+nav ul li a:not(.active):after{
+   content: "";
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 0%;
+   height: 2px;
+   background-color: #DFDBAE;
+   transition: width 0.2s ease-out;
+}
+
+nav ul li > a:hover::after {
+   width: 100%;
+}   
