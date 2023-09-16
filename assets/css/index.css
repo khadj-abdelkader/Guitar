@@ -60,3 +60,20 @@ li {
    color : #FD0000;
 }
 
+.red {
+   color: #FD0000;
+}
+
+.p-style {
+   text-align: center;
+}
+
+.blue {
+   color: #01AFFA;
+}
+
+img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
